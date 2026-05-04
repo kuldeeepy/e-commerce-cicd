@@ -12,7 +12,7 @@ app.use("/v1/api", orderRouter);
 app.use("/v1/api", paymentRouter);
 
 app.get("/health", (req, res) => {
-  res.status(200).json({ message: "Everything is good, API is running." });
+  res.status(200).json({ message: "Everything is good, API is running with deploy v2." });
 });
 
 export { app };
