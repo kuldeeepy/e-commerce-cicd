@@ -15,6 +15,4 @@ app.get("/health", (req, res) => {
   res.status(200).json({ message: "Everything is good, API is running." });
 });
 
-app.listen(8080, () => console.log("Server listening on PORT:8080"));
-
 export { app };
