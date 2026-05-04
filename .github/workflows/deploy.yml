@@ -22,9 +22,9 @@ jobs:
           script: |
             cd ${{ secrets.EC2_APP_DIR }}
             git pull origin main
-            docker build -t e-commerce-cicd .
-            docker rm -f e-commerce-cicd || true
-            docker run -d \
+            sudo docker build -t e-commerce-cicd .
+            sudo docker rm -f e-commerce-cicd || true
+            sudo docker run -d \
               --name e-commerce-cicd \
               --restart always \
               -p 8080:8080 \
