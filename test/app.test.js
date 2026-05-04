@@ -12,8 +12,8 @@ test("GET /health returns API health status", async () => {
   });
 });
 
-test("GET /v1/api/profile returns profile message", async () => {
-  const response = await request(app).get("/v1/api/profile");
+test("GET /v2/api/profile returns profile message", async () => {
+  const response = await request(app).get("/v2/api/profile");
 
   assert.equal(response.status, 200);
   assert.deepEqual(response.body, {
@@ -21,8 +21,8 @@ test("GET /v1/api/profile returns profile message", async () => {
   });
 });
 
-test("GET /v1/api/orders returns orders message", async () => {
-  const response = await request(app).get("/v1/api/orders");
+test("GET /v2/api/orders returns orders message", async () => {
+  const response = await request(app).get("/v2/api/orders");
 
   assert.equal(response.status, 200);
   assert.deepEqual(response.body, {
@@ -30,8 +30,8 @@ test("GET /v1/api/orders returns orders message", async () => {
   });
 });
 
-test("GET /v1/api/payments returns payment message", async () => {
-  const response = await request(app).get("/v1/api/payments");
+test("GET /v2/api/payments returns payment message", async () => {
+  const response = await request(app).get("/v2/api/payments");
 
   assert.equal(response.status, 200);
   assert.deepEqual(response.body, {

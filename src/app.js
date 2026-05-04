@@ -7,9 +7,9 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/v1/api", profileRouter);
-app.use("/v1/api", orderRouter);
-app.use("/v1/api", paymentRouter);
+app.use("/v2/api", profileRouter);
+app.use("/v2/api", orderRouter);
+app.use("/v2/api", paymentRouter);
 
 app.get("/health", (req, res) => {
   res.status(200).json({ message: "Everything is good, API is running with deploy v2." });
