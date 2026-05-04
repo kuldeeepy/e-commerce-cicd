@@ -15,7 +15,7 @@ test("GET /health returns API health status", async () => {
 test("GET /v1/api/profile returns profile message", async () => {
   const response = await request(app).get("/v1/api/profile");
 
-  assert.equal(response.status, 300);
+  assert.equal(response.status, 200);
   assert.deepEqual(response.body, {
     message: "This is the profile page",
   });
