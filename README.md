@@ -1,1 +1,1 @@
-## Simple nodejs app to lear CI/CD pipelines in github workflows
+### Simple nodejs app to learn CI/CD pipelines in github workflows
