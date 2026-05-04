@@ -8,7 +8,7 @@ test("GET /health returns API health status", async () => {
 
   assert.equal(response.status, 200);
   assert.deepEqual(response.body, {
-    message: "Everything is good, API is running.",
+    message: "Everything is good, API is running with deploy v2.",
   });
 });
 
